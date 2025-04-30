@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import ExpenseChart from './components/ExpenseChart';
+import ExpenseList from './components/ExpenseList';
+import ExpenseForm from './components/ExpenseForm';
 
 function App() {
+  const [budget, setBudget] = useState(1000);
+  const [expenses, setExpenses] = useState([]);
+  
+  // Add a new expense to the list
+  const addExpense = (expense) => {
+    setExpenses([...expenses, expense]);
+  };
+
+  // Calculate the total expenses
+  const totalExpenses = expenses.reduce((total, expense) => total + expense.amount, 0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Personal Finance Dashboard</h1>
       </header>
+
+      <main>
+        <ExpenseForm addExpense={addExpense} />
+        <ExpenseList expenses={expenses} />
+        <ExpenseChart expenses={totalExpenses} budget={budget} />
+      </main>
+
+      <footer>
+        <p>Remaining Budget: ${budget - totalExpenses}</p>
+      </footer>
     </div>
   );
 }

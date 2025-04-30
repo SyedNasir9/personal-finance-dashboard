@@ -1,38 +1,110 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F9FAFB;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #1E3A8A;
+}
+
+header {
+  background: linear-gradient(45deg, #1E3A8A, hwb(21 34% 55% / 0.618)); /* Gradient background from Indigo to Amber */
+  padding: 20px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  color: white;
+  font-family: 'Roboto', sans-serif; 
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+header:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5rem; 
+    padding: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 480px) {
+  header {
+    font-size: 1.2rem; 
+    padding: 12px;
+  }
+}
+
+
+button {
+  background-color: #10B981;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0A9F77;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form input {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
 }
+
+.App {
+  padding: 20px;
+}
+
+.App ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.App li {
+  margin: 5px 0;
+}
+
+
+.chart-container {
+  max-width: 300px; 
+  margin: 0 auto; 
+  padding: 10px;
+}
+
+.chart-container canvas {
+  max-width: 100% !important;
+  width: 100% !important; 
+  height: auto !important; 
+}
+
+
+h3 {
+  text-align: center;
+  color: #1E3A8A;
+}
+
