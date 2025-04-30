@@ -11,7 +11,7 @@ h1, h2, h3 {
 }
 
 header {
-  background: linear-gradient(45deg, #1E3A8A, hwb(21 34% 55% / 0.618)); /* Gradient background from Indigo to Amber */
+  background: linear-gradient(45deg, #1E3A8A, hwb(21 34% 55% / 0.618));
   padding: 20px;
   text-align: center;
   border-radius: 10px;
