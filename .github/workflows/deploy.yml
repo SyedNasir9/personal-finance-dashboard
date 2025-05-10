@@ -24,7 +24,7 @@ jobs:
         npm run build
 
     - name: Build Docker image
-      run: docker build -t your-image-name .
+      run: docker build -t finance-dashboard .
 
     - name: Push to Docker Hub
       run: |
