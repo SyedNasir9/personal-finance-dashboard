@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Pie } from 'react-chartjs-2';
+=======
+import { Pie } from 'react-chartjs-2';;
+>>>>>>> origin/main
 
 const ExpenseChart = ({ expenses, budget }) => {
   const data = {
