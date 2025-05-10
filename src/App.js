@@ -5,7 +5,7 @@ import ExpenseList from './components/ExpenseList';
 import ExpenseForm from './components/ExpenseForm';
 
 function App() {
-  const [budget, setBudget] = useState(1000);
+  const [budget] = useState(1000);
   const [expenses, setExpenses] = useState([]);
   
   // Add a new expense to the list
