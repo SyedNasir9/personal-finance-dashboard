@@ -1,5 +1,13 @@
 import React from 'react';
-import { Pie } from 'react-chartjs-2';;
+import { Pie } from 'react-chartjs-2';
+import {
+  Chart as _ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+_ChartJS.register(ArcElement, Tooltip, Legend);
 
 const ExpenseChart = ({ expenses, budget }) => {
   const data = {
@@ -13,10 +21,10 @@ const ExpenseChart = ({ expenses, budget }) => {
   };
 
   const options = {
-    responsive: true, 
+    responsive: true,
     plugins: {
       legend: {
-        position: 'top', 
+        position: 'top',
       },
     },
   };
@@ -24,9 +32,10 @@ const ExpenseChart = ({ expenses, budget }) => {
   return (
     <div className="chart-container">
       <h3>Expense Chart</h3>
-      <Pie data={data} options={options} width={200} height={200} /> {/* Adjust width and height */}
+      <Pie data={data} options={options} width={200} height={200} />
     </div>
   );
 };
 
 export default ExpenseChart;
+
