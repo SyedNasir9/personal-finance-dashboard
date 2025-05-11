@@ -1,9 +1,13 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Pie } from 'react-chartjs-2';
-=======
-import { Pie } from 'react-chartjs-2';;
->>>>>>> origin/main
+import {
+  Chart as _ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+_ChartJS.register(ArcElement, Tooltip, Legend);
 
 const ExpenseChart = ({ expenses, budget }) => {
   const data = {
@@ -15,7 +19,7 @@ const ExpenseChart = ({ expenses, budget }) => {
       },
     ],
   };
-
+  
   const options = {
     responsive: true, 
     plugins: {
