@@ -19,7 +19,6 @@ const ExpenseChart = ({ expenses, budget }) => {
       },
     ],
   };
-  
   const options = {
     responsive: true, 
     plugins: {
