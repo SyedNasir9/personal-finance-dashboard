@@ -59,10 +59,6 @@ Prometheus: http://localhost:9090
 🧩 Monitoring Setup
 Prometheus scrapes metrics from Node Exporter and visualizes system stats.
 
-
-🚦 Health Check
-A basic health-check.sh script pings the app endpoint and reports availability. Can be scheduled via cron or integrated with monitoring tools.
-
 🌍 Deployment
 Deployed on AWS EC2 with auto-start using pm2 or Docker.
 
