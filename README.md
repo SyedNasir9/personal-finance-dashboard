@@ -74,4 +74,3 @@ Docker, NGINX, Prometheus, GitHub Actions
 AWS for cloud deployment
 
 Built with 💻 + ☁️ to combine frontend experience with real-world DevOps skills.
-
