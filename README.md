@@ -9,7 +9,7 @@ A responsive and user-friendly web application for real-time budget tracking and
 - 🎨 Responsive frontend built with React and Bootstrap
 - 🐳 Docker & Docker Compose for multi-service containerization
 - 🌐 NGINX reverse proxy with access/error logging
-- ⚙️ CI/CD pipeline using GitHub Actions (or Jenkins)
+- ⚙️ CI/CD pipeline using GitHub Actions 
 - 🔍 System monitoring with Prometheus and Node Exporter
 - ✅ Custom health checks for uptime monitoring
 - ☁️ Cloud deployment on AWS EC2 with optional S3 and Load Balancer integration
