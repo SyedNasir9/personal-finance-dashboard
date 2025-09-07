@@ -9,7 +9,6 @@
 
 A modern, responsive personal finance dashboard built with React and enhanced with comprehensive DevOps practices. This project demonstrates the complete software development lifecycle from development to production deployment with monitoring, containerization, and CI/CD automation.
 
-
 ## 📋 Table of Contents
 
 - [Features](#-features)
